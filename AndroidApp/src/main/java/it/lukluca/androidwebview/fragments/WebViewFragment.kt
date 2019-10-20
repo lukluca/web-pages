@@ -39,8 +39,6 @@ class WebViewFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        Page.THE_USELESS_WEB.url
-
         pageUrl?.let {
             val myWebView: WebView = view.findViewById(R.id.webView)
             myWebView.loadUrl(it)
@@ -51,7 +49,7 @@ class WebViewFragment : Fragment() {
         /**
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
-         *
+         *emulator
          * @param pageUrl the url to load.
          * @return A new instance of fragment WebViewFragment.
          */
